@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-family: arial, sans-serif;
+        }
+        
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            box-shadow: 0 0 0 2px black;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;            
+        }
+        
+        header img {
+            display: block;
+        }
+        
+
+        nav {
+            background-color: #A4E5B2;
+        }
+        
+        ul {
+            list-style: none;
+
+        }
+        
+        li {
+            float: left;
+        }
+        
+        ul button {
+            display: block;
+            padding: 15px 0;
+            width: 192px;
+            background-color: black;
+            border-style: none;
+            margin: 30px 74.5px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+        }
+        
+        
+        a {
+            text-decoration: none;
+        }
+        
+        section.mainleft {
+            margin-top: 20px;
+            background-image: url();
+            width: 60%;
+            float: left;
+        }
+        
+        section.mainleft h2 {
+            margin-bottom: 5px;
+        }
+        
+        section.mainleft img {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        aside.mainright {
+            width: 40%;
+            float: left;
+        }
+        
+        article {
+            margin-left: 40px;
+        }
+        
+        article img {
+            display: block;
+            float: left;
+            margin-right: 20px;
+        }
+        
+        article p {
+            margin: 0 40px;
+        }
+        
+        
+        .asidetop {
+            background-color: #FFBF19;
+            height: 50%;
+            width: auto;
+            padding: 80px;
+            font-style: italic;
+            font-size: 2rem;
+        }
+        
+        .asidebottom {
+            background-color: #18CC91;
+            padding-bottom: 104px;
+        }
+        
+        .asidebottom p {
+            padding: 100px 10px 0;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3px;
+        }
+        
+        .asidebottom form {
+            font-size: 1rem;
+            text-align: center;
+        }
+        
+        footer {
+            height: 50px;
+            background-color: #4A2CCC;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        form button {
+            border-style: none;
+            font-size: 1.5rem;
+            display: block;
+            margin: 10px auto 0;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+       <header>
+           <img src="https://c1.staticflickr.com/5/4466/36755786354_ec474916fa_b.jpg" alt="sunrise" title-"sunrise" width="1024" height="384">
+       </header>
+       
+       <nav>
+           <ul class="clearfix">
+               <li><a href="#"><button>Button</button></a></li>
+               <li><a href="#"><button>Button</button></a></li>
+               <li><a href="#"><button>Button</button></a></li>
+           </ul>
+       </nav>
+       
+       <main class="clearfix">
+           <section class="mainleft">
+               <article class="clearfix">
+                   <h2>Article title 1</h2>
+                   <img src="https://cdn.dribbble.com/users/518045/screenshots/2764080/dribbble_nature_2_teaser.png" alt="nature" title="nature">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem consectetur eos voluptatum aliquid, voluptate impedit, id aperiam odio cum, aspernatur, itaque laboriosam! Fugit a accusamus autem, ducimus ullam consequatur architecto?</p>
+               </article>               
+                  
+                <article class="clearfix">
+                   <h2>Article title 2</h2>
+                   <img src="https://cdn.dribbble.com/users/518045/screenshots/2764080/dribbble_nature_2_teaser.png" alt="nature" title="nature">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem consectetur eos voluptatum aliquid, voluptate impedit, id aperiam odio cum, aspernatur, itaque laboriosam! Fugit a accusamus autem, ducimus ullam consequatur architecto?</p>
+               </article>               
+                  
+                <article class="clearfix">
+                   <h2>Article title 3</h2>
+                   <img src="https://cdn.dribbble.com/users/518045/screenshots/2764080/dribbble_nature_2_teaser.png" alt="nature" title="nature">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem consectetur eos voluptatum aliquid, voluptate impedit, id aperiam odio cum, aspernatur, itaque laboriosam! Fugit a accusamus autem, ducimus ullam consequatur architecto?</p>
+               </article>
+           </section>
+           
+           <aside class="mainright">
+               <section class="asidetop">
+                   <blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit."<blockquote>
+               </section>
+                   
+               <section class="asidebottom">
+                   <p>Lorem</p>
+                   <form>
+                       Lorem <input type="text" placeholder="ipsum">
+                       <button>Lorem</button>
+                   </form>
+               </section>
+           </aside>
+    
+       </main>
+       
+       <footer>
+           <p>&copy; Lorem Footer Ipsum</p>           
+       </footer>
+   </div>
+    
+</body>
+</html>
